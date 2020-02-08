@@ -35,8 +35,8 @@ def literal_aoh
 
   people.each do |person|
     temp_arr = []
-    temp_arr.push(person["name"])
-    temp_arr.push(perosn["occupation"])
+    temp_arr.push(person[:name])
+    temp_arr.push(perosn[:name])
     people_arr.push(temp_arr)
   end
 
