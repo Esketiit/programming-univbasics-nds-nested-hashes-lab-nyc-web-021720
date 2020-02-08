@@ -23,6 +23,22 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
+  people = [
+    { name:  "Don Gately", occupation: "Live-in Staff" },
+    { name:  "Joelle van Dyne", occupation: "Radio Personality" },
+    { name:  "Pat Monteseian", occupation: "Staff" },
+    { name:  "Kate Gompert", occupation: "None" },
+    { name:  "Bruce Green", occupation: "Fan of Mildred" }
+  ]
+
+  people_arr = []
+  
+  people.each do |person|
+    people_arr.push(person["name"])
+    people_arr.push(perosn["occupation"])
+  end
+
+  return people_arr
 end
 
 def aoh_lookup(aoh, row, key)
