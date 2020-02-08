@@ -33,8 +33,6 @@ def literal_aoh
 
   return people
   end
-
-  return people_arr
 end
 
 def aoh_lookup(aoh, row, key)
