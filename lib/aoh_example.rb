@@ -31,13 +31,7 @@ def literal_aoh
     { name:  "Bruce Green", occupation: "Fan of Mildred" }
   ]
 
-  people_arr = []
-
-  people.each do |person|
-    temp_arr = []
-    temp_arr.push(person[:name])
-    temp_arr.push(person[:name])
-    people_arr.push(temp_arr)
+  return people
   end
 
   return people_arr
