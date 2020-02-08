@@ -32,10 +32,12 @@ def literal_aoh
   ]
 
   people_arr = []
-
+  
   people.each do |person|
-    people_arr.push(person["name"])
-    people_arr.push(perosn["occupation"])
+    temp_arr = []
+    temp_arr.push(person["name"])
+    temp_arr.push(perosn["occupation"])
+    people_arr.push(temp_arr)
   end
 
   return people_arr
